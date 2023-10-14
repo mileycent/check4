@@ -44,7 +44,8 @@ app.get('/divide', async(req, res) => {
     console.log(purple);
 })
 app.get('/comma', async(req, res) => {
-    const pretty = await Model.findOneAndUpdate({Matilda})
+    const pretty = await Model.findOneAndUpdate({name: Matilda, age: 20})
+    console.log(pretty);
 })
 app.get('/wait', async(req, res) => {
     const hell = await Model.findByIdAndRemove('652a807ec3a648ab133734e4')
